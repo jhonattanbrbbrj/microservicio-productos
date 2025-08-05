@@ -16,11 +16,16 @@ public class Producto {
     @Column(nullable = false)
     private double precio;
 
+    @Column(nullable = false, unique = true)
+    private String descripcion;
+
+
     public Producto() {}
 
-    public Producto(String nombre, double precio) {
+    public Producto(String nombre, double precio, String descripcion) {
         this.nombre = nombre;
         this.precio = precio;
+        this.descripcion = descripcion;
     }
 
     // Getters y Setters
@@ -32,4 +37,8 @@ public class Producto {
 
     public double getPrecio() { return precio; }
     public void setPrecio(double precio) { this.precio = precio; }
+
+    public String getDescripcion() { return descripcion; }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
+
 }
