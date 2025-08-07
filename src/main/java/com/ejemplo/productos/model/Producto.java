@@ -16,10 +16,10 @@ public class Producto {
     @Column(nullable = false)
     private double precio;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = false)
     private String descripcion;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = false)
     private String categoria;
 
 
