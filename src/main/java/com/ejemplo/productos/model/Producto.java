@@ -19,6 +19,9 @@ public class Producto {
     @Column(nullable = false, unique = true)
     private String descripcion;
 
+    @Column(nullable = false, unique = true)
+    private String categoria;
+
 
     public Producto() {}
 
@@ -41,4 +44,6 @@ public class Producto {
     public String getDescripcion() { return descripcion; }
     public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
 
+    public String getcategoria() { return categoria; }
+    public void setcategoria(String categoria) { this.categoria = categoria; }
 }
